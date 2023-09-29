@@ -1,4 +1,4 @@
-* {
+*  {
   margin: 0px;
   padding: 0px;
 }
@@ -51,14 +51,26 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+
+  
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  transform: scale(1.1);
+  filter: brightness(50%);
+  
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -68,6 +80,9 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .hero-image {
@@ -78,6 +93,9 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-subheading {
@@ -100,36 +118,55 @@ footer {
 /* Adventures grid page CSS */
 /* ================================== */
 
+
+
+
+.bold{
+  font-weight: 700;
+}
+
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  border-radius: 10px;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s all;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+
 }
 
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
 
-.adventure-detail-card {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
 
+
+
+
+.adventure-detail-card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
 }
 
 .adventure-card-image {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
 }
 .adventure-card-image:hover {
-  /* TODO: MODULE_ADVENTURE_DETAILS */
-  /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
 .experience-content ul li {
   margin-left: 16px;
@@ -141,5 +178,5 @@ footer {
   #reservation {
     width: 400px;
     position: fixed;
-  }
-}
+    }
+  }
