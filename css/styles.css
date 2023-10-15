@@ -1,4 +1,4 @@
-*  {
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -118,6 +118,22 @@ footer {
 /* Adventures grid page CSS */
 /* ================================== */
 
+.adventure-detail-card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.adventure-card-image {
+  width: 100%;
+  height: 100%;
+}
+.adventure-card-image:hover {
+  filter: brightness(50%);
+}
+
+
+
 
 
 
@@ -128,17 +144,21 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  
   height: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  height: 20rem;
+  border-radius: 8px;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
   /* object-fit: cover; */
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
   transition: 0.2s all;
+
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
@@ -178,5 +198,24 @@ footer {
   #reservation {
     width: 400px;
     position: fixed;
-    }
-  }
+  }
+}
+.sunshine-header{
+  font-weight:400;
+  font-family: sans-serif;
+}
+.sunshine-caption{
+  color: #999;
+  font-weight:200;
+  font-family: sans-serif;
+}
+.grid-box{
+  position:fixed;
+  top:25px;
+  right:1rem;
+  border: thin grey solid;
+  padding: 16px;
+}
+.grid-box a {
+color: orange!important;
+}
